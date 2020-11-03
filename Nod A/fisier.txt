@@ -1,0 +1,7 @@
+Modul CFB este aproape identic cu modul CBC. Diferenta pleaca de la criptarea primului bloc de plaintext. Doar vectorul de initializare este
+criptat la acest pas, rezultatul fiind apoi combinat prin xor cu blocul de plaintext pentru criptarea acestuia din urma. In continuare secventa
+dinaintea fiecarei aplicari a algoritmului de criptare pe fiecare bloc, consta similar ca la CBC intr-un xor aplicat intre rezultatul criptarii
+blocului precedent si blocul de plaintext precedent.
+Diferenta intre modul OFB si modul CFB consta in faptul ca in modul OFB "fluxul de cheie" (keystream) este generat independent de blocurile
+de plaintext criptate. Un bloc de cheie este generat strict prin criptarea blocului anterior de cheie. Criptarea plaintextului se face printr-o
+operatie de xor cu fiecare bloc de cheie.
